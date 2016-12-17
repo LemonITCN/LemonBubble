@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5291A4EC1E053A1900E8C03A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5291A4EB1E053A1900E8C03A /* main.m */; };
+		5291A4EF1E053A1900E8C03A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5291A4EE1E053A1900E8C03A /* AppDelegate.m */; };
+		5291A4F21E053A1900E8C03A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5291A4F11E053A1900E8C03A /* ViewController.m */; };
+		5291A4F51E053A1900E8C03A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5291A4F31E053A1900E8C03A /* Main.storyboard */; };
+		5291A4F71E053A1900E8C03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5291A4F61E053A1900E8C03A /* Assets.xcassets */; };
+		5291A4FA1E053A1900E8C03A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5291A4F81E053A1900E8C03A /* LaunchScreen.storyboard */; };
+		5291A5061E053AA000E8C03A /* LemonBubbleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5291A5011E053AA000E8C03A /* LemonBubbleInfo.m */; };
+		5291A5071E053AA000E8C03A /* LemonBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5291A5031E053AA000E8C03A /* LemonBubbleView.m */; };
+		5291A5081E053AA000E8C03A /* UIResponder+LemonBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 5291A5051E053AA000E8C03A /* UIResponder+LemonBubble.m */; };
+		52A842821E053D3E000D6A82 /* libLemonBubble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5291A4D81E0539E800E8C03A /* libLemonBubble.a */; };
+		52A842871E0542BC000D6A82 /* UIResponder+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A842861E0542BC000D6A82 /* UIResponder+Test.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5291A4D61E0539E800E8C03A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5291A4D81E0539E800E8C03A /* libLemonBubble.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLemonBubble.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5291A4E81E053A1900E8C03A /* LemonBubble-samples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LemonBubble-samples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5291A4EB1E053A1900E8C03A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5291A4ED1E053A1900E8C03A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5291A4EE1E053A1900E8C03A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5291A4F01E053A1900E8C03A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5291A4F11E053A1900E8C03A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5291A4F41E053A1900E8C03A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5291A4F61E053A1900E8C03A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5291A4F91E053A1900E8C03A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5291A4FB1E053A1900E8C03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5291A4FF1E053AA000E8C03A /* LemonBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LemonBubble.h; sourceTree = "<group>"; };
+		5291A5001E053AA000E8C03A /* LemonBubbleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LemonBubbleInfo.h; sourceTree = "<group>"; };
+		5291A5011E053AA000E8C03A /* LemonBubbleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LemonBubbleInfo.m; sourceTree = "<group>"; };
+		5291A5021E053AA000E8C03A /* LemonBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LemonBubbleView.h; sourceTree = "<group>"; };
+		5291A5031E053AA000E8C03A /* LemonBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LemonBubbleView.m; sourceTree = "<group>"; };
+		5291A5041E053AA000E8C03A /* UIResponder+LemonBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+LemonBubble.h"; sourceTree = "<group>"; };
+		5291A5051E053AA000E8C03A /* UIResponder+LemonBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+LemonBubble.m"; sourceTree = "<group>"; };
+		52A842851E0542BC000D6A82 /* UIResponder+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Test.h"; sourceTree = "<group>"; };
+		52A842861E0542BC000D6A82 /* UIResponder+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Test.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5291A4D51E0539E800E8C03A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5291A4E51E053A1900E8C03A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A842821E053D3E000D6A82 /* libLemonBubble.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5291A4CF1E0539E800E8C03A = {
+			isa = PBXGroup;
+			children = (
+				5291A4DA1E0539E800E8C03A /* LemonBubble */,
+				5291A4E91E053A1900E8C03A /* LemonBubble-samples */,
+				5291A4D91E0539E800E8C03A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5291A4D91E0539E800E8C03A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5291A4D81E0539E800E8C03A /* libLemonBubble.a */,
+				5291A4E81E053A1900E8C03A /* LemonBubble-samples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5291A4DA1E0539E800E8C03A /* LemonBubble */ = {
+			isa = PBXGroup;
+			children = (
+				5291A4FF1E053AA000E8C03A /* LemonBubble.h */,
+				5291A5001E053AA000E8C03A /* LemonBubbleInfo.h */,
+				5291A5011E053AA000E8C03A /* LemonBubbleInfo.m */,
+				5291A5021E053AA000E8C03A /* LemonBubbleView.h */,
+				5291A5031E053AA000E8C03A /* LemonBubbleView.m */,
+				5291A5041E053AA000E8C03A /* UIResponder+LemonBubble.h */,
+				5291A5051E053AA000E8C03A /* UIResponder+LemonBubble.m */,
+				52A842851E0542BC000D6A82 /* UIResponder+Test.h */,
+				52A842861E0542BC000D6A82 /* UIResponder+Test.m */,
+			);
+			path = LemonBubble;
+			sourceTree = "<group>";
+		};
+		5291A4E91E053A1900E8C03A /* LemonBubble-samples */ = {
+			isa = PBXGroup;
+			children = (
+				5291A4ED1E053A1900E8C03A /* AppDelegate.h */,
+				5291A4EE1E053A1900E8C03A /* AppDelegate.m */,
+				5291A4F01E053A1900E8C03A /* ViewController.h */,
+				5291A4F11E053A1900E8C03A /* ViewController.m */,
+				5291A4F31E053A1900E8C03A /* Main.storyboard */,
+				5291A4F61E053A1900E8C03A /* Assets.xcassets */,
+				5291A4F81E053A1900E8C03A /* LaunchScreen.storyboard */,
+				5291A4FB1E053A1900E8C03A /* Info.plist */,
+				5291A4EA1E053A1900E8C03A /* Supporting Files */,
+			);
+			path = "LemonBubble-samples";
+			sourceTree = "<group>";
+		};
+		5291A4EA1E053A1900E8C03A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5291A4EB1E053A1900E8C03A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5291A4D71E0539E800E8C03A /* LemonBubble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5291A4E11E0539E800E8C03A /* Build configuration list for PBXNativeTarget "LemonBubble" */;
+			buildPhases = (
+				5291A4D41E0539E800E8C03A /* Sources */,
+				5291A4D51E0539E800E8C03A /* Frameworks */,
+				5291A4D61E0539E800E8C03A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LemonBubble;
+			productName = LemonBubble;
+			productReference = 5291A4D81E0539E800E8C03A /* libLemonBubble.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5291A4E71E053A1900E8C03A /* LemonBubble-samples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5291A4FC1E053A1900E8C03A /* Build configuration list for PBXNativeTarget "LemonBubble-samples" */;
+			buildPhases = (
+				5291A4E41E053A1900E8C03A /* Sources */,
+				5291A4E51E053A1900E8C03A /* Frameworks */,
+				5291A4E61E053A1900E8C03A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LemonBubble-samples";
+			productName = "LemonBubble-samples";
+			productReference = 5291A4E81E053A1900E8C03A /* LemonBubble-samples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5291A4D01E0539E800E8C03A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = 1em0nsOft;
+				TargetAttributes = {
+					5291A4D71E0539E800E8C03A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2RD6E8WKY9;
+						ProvisioningStyle = Automatic;
+					};
+					5291A4E71E053A1900E8C03A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = E9Z57RBU72;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5291A4D31E0539E800E8C03A /* Build configuration list for PBXProject "LemonBubble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5291A4CF1E0539E800E8C03A;
+			productRefGroup = 5291A4D91E0539E800E8C03A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5291A4D71E0539E800E8C03A /* LemonBubble */,
+				5291A4E71E053A1900E8C03A /* LemonBubble-samples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5291A4E61E053A1900E8C03A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5291A4FA1E053A1900E8C03A /* LaunchScreen.storyboard in Resources */,
+				5291A4F71E053A1900E8C03A /* Assets.xcassets in Resources */,
+				5291A4F51E053A1900E8C03A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5291A4D41E0539E800E8C03A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A842871E0542BC000D6A82 /* UIResponder+Test.m in Sources */,
+				5291A5071E053AA000E8C03A /* LemonBubbleView.m in Sources */,
+				5291A5061E053AA000E8C03A /* LemonBubbleInfo.m in Sources */,
+				5291A5081E053AA000E8C03A /* UIResponder+LemonBubble.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5291A4E41E053A1900E8C03A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5291A4F21E053A1900E8C03A /* ViewController.m in Sources */,
+				5291A4EF1E053A1900E8C03A /* AppDelegate.m in Sources */,
+				5291A4EC1E053A1900E8C03A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5291A4F31E053A1900E8C03A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5291A4F41E053A1900E8C03A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5291A4F81E053A1900E8C03A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5291A4F91E053A1900E8C03A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5291A4DF1E0539E800E8C03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5291A4E01E0539E800E8C03A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5291A4E21E0539E800E8C03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2RD6E8WKY9;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5291A4E31E0539E800E8C03A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2RD6E8WKY9;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5291A4FD1E053A1900E8C03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E9Z57RBU72;
+				INFOPLIST_FILE = "LemonBubble-samples/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.lemonsoft.LemonBubble-samples";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5291A4FE1E053A1900E8C03A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E9Z57RBU72;
+				INFOPLIST_FILE = "LemonBubble-samples/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.lemonsoft.LemonBubble-samples";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5291A4D31E0539E800E8C03A /* Build configuration list for PBXProject "LemonBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5291A4DF1E0539E800E8C03A /* Debug */,
+				5291A4E01E0539E800E8C03A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5291A4E11E0539E800E8C03A /* Build configuration list for PBXNativeTarget "LemonBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5291A4E21E0539E800E8C03A /* Debug */,
+				5291A4E31E0539E800E8C03A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5291A4FC1E053A1900E8C03A /* Build configuration list for PBXNativeTarget "LemonBubble-samples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5291A4FD1E053A1900E8C03A /* Debug */,
+				5291A4FE1E053A1900E8C03A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5291A4D01E0539E800E8C03A /* Project object */;
+}
