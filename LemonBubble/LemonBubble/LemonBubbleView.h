@@ -85,4 +85,12 @@
  */
 - (void)hide;
 
+/**
+ *  @author chenjunsheng
+ *  @date 2016-12-18 16:08:40
+ *
+ *  @brief 定时隐藏当前泡泡控件
+ */
+- (void)hideWithCloseTime: (CGFloat)time;
+
 @end

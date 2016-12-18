@@ -249,4 +249,11 @@
     [[LemonBubbleView defaultBubbleView] hide];
 }
 
+/**
+ 定时隐藏现在显示的泡泡控件
+ */
+- (void)hideBubbleAfter:(CGFloat)duration {
+	[[LemonBubbleView defaultBubbleView] hideWithCloseTime:duration];
+}
+
 @end

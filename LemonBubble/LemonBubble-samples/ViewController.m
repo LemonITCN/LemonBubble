@@ -18,8 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-- (IBAction)tt:(UIButton *)sender {
+- (IBAction)hello:(UIButton *)sender {
     [self showRoundProgressWithTitle: @"oh!"];
+	[self hideBubbleAfter:3];
 }
-
+- (IBAction)success:(UIButton *)sender {
+	[self showRightWithTitle:@"我是一个成功提示框！" autoCloseTime:2];
+}
+- (IBAction)fail:(UIButton *)sender {
+	[self showErrorWithTitle:@"我是一个错误提示框!" autoCloseTime:2];
+}
 @end
