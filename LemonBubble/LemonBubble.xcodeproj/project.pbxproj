@@ -17,7 +17,11 @@
 		5291A5071E053AA000E8C03A /* LemonBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5291A5031E053AA000E8C03A /* LemonBubbleView.m */; };
 		5291A5081E053AA000E8C03A /* UIResponder+LemonBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 5291A5051E053AA000E8C03A /* UIResponder+LemonBubble.m */; };
 		52A842821E053D3E000D6A82 /* libLemonBubble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5291A4D81E0539E800E8C03A /* libLemonBubble.a */; };
-		52A842871E0542BC000D6A82 /* UIResponder+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A842861E0542BC000D6A82 /* UIResponder+Test.m */; };
+		52D26E7B1E06B524008ABC1F /* icon_animate.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D26E771E06B524008ABC1F /* icon_animate.png */; };
+		52D26E7C1E06B524008ABC1F /* icon_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D26E781E06B524008ABC1F /* icon_error.png */; };
+		52D26E7D1E06B524008ABC1F /* icon_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D26E791E06B524008ABC1F /* icon_right.png */; };
+		52D26E7E1E06B524008ABC1F /* icon_wait.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D26E7A1E06B524008ABC1F /* icon_wait.png */; };
+		52D26E811E06B5CE008ABC1F /* RoundFunctionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D26E801E06B5CE008ABC1F /* RoundFunctionButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,8 +55,12 @@
 		5291A5031E053AA000E8C03A /* LemonBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LemonBubbleView.m; sourceTree = "<group>"; };
 		5291A5041E053AA000E8C03A /* UIResponder+LemonBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+LemonBubble.h"; sourceTree = "<group>"; };
 		5291A5051E053AA000E8C03A /* UIResponder+LemonBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+LemonBubble.m"; sourceTree = "<group>"; };
-		52A842851E0542BC000D6A82 /* UIResponder+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Test.h"; sourceTree = "<group>"; };
-		52A842861E0542BC000D6A82 /* UIResponder+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Test.m"; sourceTree = "<group>"; };
+		52D26E771E06B524008ABC1F /* icon_animate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_animate.png; sourceTree = "<group>"; };
+		52D26E781E06B524008ABC1F /* icon_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_error.png; sourceTree = "<group>"; };
+		52D26E791E06B524008ABC1F /* icon_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_right.png; sourceTree = "<group>"; };
+		52D26E7A1E06B524008ABC1F /* icon_wait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_wait.png; sourceTree = "<group>"; };
+		52D26E7F1E06B5CE008ABC1F /* RoundFunctionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundFunctionButton.h; sourceTree = "<group>"; };
+		52D26E801E06B5CE008ABC1F /* RoundFunctionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundFunctionButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +110,6 @@
 				5291A5031E053AA000E8C03A /* LemonBubbleView.m */,
 				5291A5041E053AA000E8C03A /* UIResponder+LemonBubble.h */,
 				5291A5051E053AA000E8C03A /* UIResponder+LemonBubble.m */,
-				52A842851E0542BC000D6A82 /* UIResponder+Test.h */,
-				52A842861E0542BC000D6A82 /* UIResponder+Test.m */,
 			);
 			path = LemonBubble;
 			sourceTree = "<group>";
@@ -111,6 +117,7 @@
 		5291A4E91E053A1900E8C03A /* LemonBubble-samples */ = {
 			isa = PBXGroup;
 			children = (
+				52D26E761E06B417008ABC1F /* Resource */,
 				5291A4ED1E053A1900E8C03A /* AppDelegate.h */,
 				5291A4EE1E053A1900E8C03A /* AppDelegate.m */,
 				5291A4F01E053A1900E8C03A /* ViewController.h */,
@@ -120,6 +127,8 @@
 				5291A4F81E053A1900E8C03A /* LaunchScreen.storyboard */,
 				5291A4FB1E053A1900E8C03A /* Info.plist */,
 				5291A4EA1E053A1900E8C03A /* Supporting Files */,
+				52D26E7F1E06B5CE008ABC1F /* RoundFunctionButton.h */,
+				52D26E801E06B5CE008ABC1F /* RoundFunctionButton.m */,
 			);
 			path = "LemonBubble-samples";
 			sourceTree = "<group>";
@@ -130,6 +139,17 @@
 				5291A4EB1E053A1900E8C03A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52D26E761E06B417008ABC1F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				52D26E771E06B524008ABC1F /* icon_animate.png */,
+				52D26E781E06B524008ABC1F /* icon_error.png */,
+				52D26E791E06B524008ABC1F /* icon_right.png */,
+				52D26E7A1E06B524008ABC1F /* icon_wait.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +236,11 @@
 			files = (
 				5291A4FA1E053A1900E8C03A /* LaunchScreen.storyboard in Resources */,
 				5291A4F71E053A1900E8C03A /* Assets.xcassets in Resources */,
+				52D26E7B1E06B524008ABC1F /* icon_animate.png in Resources */,
+				52D26E7D1E06B524008ABC1F /* icon_right.png in Resources */,
+				52D26E7C1E06B524008ABC1F /* icon_error.png in Resources */,
 				5291A4F51E053A1900E8C03A /* Main.storyboard in Resources */,
+				52D26E7E1E06B524008ABC1F /* icon_wait.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52A842871E0542BC000D6A82 /* UIResponder+Test.m in Sources */,
 				5291A5071E053AA000E8C03A /* LemonBubbleView.m in Sources */,
 				5291A5061E053AA000E8C03A /* LemonBubbleInfo.m in Sources */,
 				5291A5081E053AA000E8C03A /* UIResponder+LemonBubble.m in Sources */,
@@ -240,6 +263,7 @@
 			files = (
 				5291A4F21E053A1900E8C03A /* ViewController.m in Sources */,
 				5291A4EF1E053A1900E8C03A /* AppDelegate.m in Sources */,
+				52D26E811E06B5CE008ABC1F /* RoundFunctionButton.m in Sources */,
 				5291A4EC1E053A1900E8C03A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "LemonBubble.h"
 
+#define COLUMN_COUNT 2
+#define PADDING 8
+
 @interface ViewController ()
 
 @end
@@ -17,7 +20,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 }
+
+- (RoundFunctionButton *)createWithIndex: (NSInteger)index{
+    CGFloat width = ([UIScreen mainScreen].bounds.size.width - (COLUMN_COUNT + 1) * PADDING) / 2;
+    CGFloat x = PADDING + (index % COLUMN_COUNT * (PADDING + width));
+    CGFloat y = PADDING + (index / COLUMN_COUNT * (PADDING + width));
+    return [[RoundFunctionButton alloc] initWithWidth: width x: x y: y];
+}
+
 - (IBAction)hello:(UIButton *)sender {
     [self showRoundProgressWithTitle: @"oh!"];
 	[self hideBubbleAfter:3];

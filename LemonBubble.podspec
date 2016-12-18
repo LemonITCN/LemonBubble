@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "1em0nsOft-Liuri" => "liuri@lemonsoft.net" }
-  s.source           = { :git => "https://github.com/1em0nsOft/LemonBubble-objc.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/1em0nsOft/LemonBubble.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://www.lemonsoft.net'
 
   s.platform     = :ios, '8.0'
