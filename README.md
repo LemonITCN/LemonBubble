@@ -9,7 +9,7 @@
 
 - 先来看看我们的动画效果图吧
 
-![https://raw.githubusercontent.com/1em0nsOft/LemonBubble/master/ImagesResource/LemonBubble.gif]()
+![image](https://raw.githubusercontent.com/1em0nsOft/LemonBubble/master/ImagesResource/LemonBubble.gif)
 
 
 
