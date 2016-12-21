@@ -39,6 +39,9 @@ typedef enum{
     BUBBLE_LOCATION_STYLE_BOTTOM
 }BUBBLE_LOCATION_STYLE;
 
+/**
+ 泡泡控件的信息描述对象，该类详细描述了泡泡对象的左右外观信息，控件可以根据泡泡信息对象来进行设置泡泡控件的外观属性
+ */
 @interface LemonBubbleInfo : NSObject
 
 /// @breif 泡泡控件的大小
@@ -82,7 +85,19 @@ typedef enum{
 /// @breif key，随机数，用于标志一个info的唯一性，关闭时候会通过这个验证
 @property (nonatomic, readonly) CGFloat key;
 
+/**
+ 计算泡泡控件的整体frame
+
+ @return 计算出的泡控件的frame
+ */
 - (CGRect)calBubbleViewFrame;
+
+/**
+ 计算并设置图标控件和标题控件的frame
+
+ @param iconView 要设置的图标控件
+ @param titleView 要设置的标题控件
+ */
 - (void)calIconView:(UIImageView *)iconView andTitleView:(UILabel *)titleView;
 
 @end

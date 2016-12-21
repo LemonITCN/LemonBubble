@@ -92,9 +92,13 @@
     [mWindow addSubview: self];
     
     // 弹簧动画改变外观
-    [UIView animateWithDuration: 0.4 delay:0 usingSpringWithDamping: 0.5 initialSpringVelocity:0.5 options: UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration: 0.45
+                          delay:0
+         usingSpringWithDamping: 0.8
+          initialSpringVelocity:0.9
+                        options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
         self.transform = CGAffineTransformMakeScale(1, 1);
-        self.alpha = 1;
         if (_currentDrawLayer) {
             [_currentDrawLayer removeFromSuperlayer];
         }
@@ -125,7 +129,12 @@
         else{// 逐帧连环动画
             self.frameAnimationPlayIndex = 0;// 帧动画播放索引归零
             self.iconImageView.image = _currentInfo.iconArray[0];
-            self.currentTimer = [NSTimer scheduledTimerWithTimeInterval: info.frameAnimationTime target: self selector: @selector(frameAnimationPlayer) userInfo: nil repeats: YES];
+            self.currentTimer =
+            [NSTimer scheduledTimerWithTimeInterval: info.frameAnimationTime
+                                             target: self
+                                           selector: @selector(frameAnimationPlayer)
+                                           userInfo: nil
+                                            repeats: YES];
         }
         // maskView
         if (_currentInfo.isShowMaskView && _maskView.hidden) {
@@ -141,11 +150,15 @@
         }
     }];
     
-    [UIView animateWithDuration: 0.4 delay:0 options:UIViewAnimationOptionTransitionCurlUp animations:^{
+    [UIView animateWithDuration: 0.45
+                          delay:0
+                        options:UIViewAnimationOptionTransitionCurlUp
+                     animations:^{
         _titleLabel.textColor = info.titleColor;
         [self setBackgroundColor: info.backgroundColor];
         _currentDrawLayer.strokeColor = info.iconColor.CGColor;
         _maskView.backgroundColor = _currentInfo.maskColor;
+        self.alpha = 1;
     } completion:^(BOOL finished) {
         
     }];
@@ -183,7 +196,9 @@
  */
 - (void)showWithInfo: (LemonBubbleInfo *)info autoCloseTime: (CGFloat)time{
     [self showWithInfo: info];
-    [self performSelector: @selector(hide) withObject: self afterDelay: time + 0.2];
+    [self performSelector: @selector(hide)
+               withObject: self
+               afterDelay: time + 0.2];
 }
 
 /**
@@ -197,7 +212,8 @@
  */
 - (void)showWithInfoKey: (NSString *)infoKey autoCloseTime: (CGFloat)time{
     if ([self.infoDic.allKeys containsObject: infoKey]){
-        [self showWithInfo: _infoDic[infoKey] autoCloseTime: time];
+        [self showWithInfo: _infoDic[infoKey]
+             autoCloseTime: time];
     }
 }
 
@@ -208,7 +224,9 @@
  *  @brief 隐藏当前泡泡控件
  */
 - (void)hideWithCloseTime: (CGFloat)time {
-	[self performSelector: @selector(hide) withObject: self afterDelay: time];
+	[self performSelector: @selector(hide)
+               withObject: self
+               afterDelay: time];
 }
 
 /**
@@ -220,7 +238,10 @@
 - (void)hide{
     if (self.closeKey == _currentInfo.key){// 要关闭的key没有变化，可以关闭
         // 动画缩放，更改透明度使其动画隐藏
-        [UIView animateWithDuration: 0.2 delay: 0 options: UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration: 0.2
+                              delay: 0
+                            options: UIViewAnimationOptionCurveEaseOut
+                         animations:^{
             self.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
             _maskView.alpha = 0;
             self.alpha = 0;

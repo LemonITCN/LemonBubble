@@ -8,7 +8,7 @@
 
 #import "RoundFunctionButton.h"
 
-#define PADDING 4
+#define PADDING 14
 
 @implementation RoundFunctionButton
 
@@ -20,14 +20,17 @@
         CGFloat iconX = (width - iconWidth) / 2;
         self.iconView = [[UIImageView alloc] initWithFrame: CGRectMake(iconX, PADDING, iconWidth, iconWidth)];
         self.iconView.contentMode = UIViewContentModeScaleAspectFit;
-        CGFloat titleY = PADDING + iconWidth;
+        CGFloat titleY = PADDING + 4 + iconWidth;
         CGFloat titleHeight = width - PADDING * 2 - iconWidth;
         CGFloat titleWidth = width - PADDING * 2;
         self.titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(PADDING, titleY, titleWidth, titleHeight)];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.titleLabel.font = [UIFont systemFontOfSize: 11];
         self.layer.borderWidth = 1;
-        self.layer.borderColor = [UIColor grayColor].CGColor;
+        self.layer.borderColor = [UIColor colorWithRed: 0.7 green: 0.7 blue:0.7 alpha: 0.7].CGColor;
         self.layer.cornerRadius = PADDING;
+        [self addSubview: self.iconView];
+        [self addSubview: self.titleLabel];
     }
     return self;
 }

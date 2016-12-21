@@ -68,8 +68,8 @@
     info.iconColor = [UIColor  colorWithRed: 0 / 255.0 green: 205 / 255.0 blue:0 alpha:1];
     info.titleColor = [UIColor blackColor];
 //    info.layoutStyle = BUBBLE_LAYOUT_STYLE_ICON_LEFT_TITLE_RIGHT;
-    info.bubbleSize = CGSizeMake(200, 100);
-    
+    info.bubbleSize = CGSizeMake(200, 130);
+
     return info;
 }
 
@@ -234,8 +234,8 @@
     info.backgroundColor = [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1];
     info.iconColor = [UIColor  colorWithRed: 255 / 255.0 green: 48 / 255.0 blue: 48 / 255.0 alpha:1];
     info.titleColor = [UIColor blackColor];
-    info.layoutStyle = BUBBLE_LAYOUT_STYLE_ICON_LEFT_TITLE_RIGHT;
-    info.bubbleSize = CGSizeMake(200, 100);
+    info.layoutStyle = BUBBLE_LAYOUT_STYLE_ICON_TOP_TITLE_BOTTOM;
+    info.bubbleSize = CGSizeMake(200, 130);
     return info;
 }
 
@@ -254,6 +254,14 @@
  */
 - (void)hideBubbleAfter:(CGFloat)duration {
 	[[LemonBubbleView defaultBubbleView] hideWithCloseTime:duration];
+}
+
+- (void)showBubbleWithInfo: (LemonBubbleInfo *)info{
+    [[LemonBubbleView defaultBubbleView] showWithInfo: info];
+}
+
+- (void)showBubbleWithInfo: (LemonBubbleInfo *)info time: (CGFloat)time{
+    [[LemonBubbleView defaultBubbleView] showWithInfo: info autoCloseTime: time];
 }
 
 @end

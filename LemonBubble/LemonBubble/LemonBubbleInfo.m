@@ -84,11 +84,14 @@
 }
 
 //计算图标和文本，使其居中排列。
-- (void)calIconView:(UIImageView *)iconView andTitleView:(UILabel *)titleView {
-	CGSize bubbleContentSize = CGSizeMake(self.bubbleSize.width * (1 - self.proportionOfPadding.x * 2),
-										  self.bubbleSize.height * (1 - self.proportionOfPadding.y * 2));
+- (void)calIconView:(UIImageView *)iconView
+       andTitleView:(UILabel *)titleView {
+	CGSize bubbleContentSize =
+        CGSizeMake(self.bubbleSize.width * (1 - self.proportionOfPadding.x * 2),
+                   self.bubbleSize.height * (1 - self.proportionOfPadding.y * 2));
 	
-	CGFloat iconWidth = (self.layoutStyle == BUBBLE_LAYOUT_STYLE_TITLE_ONLY) ? 0 : bubbleContentSize.height * self.proportionOfIcon;
+	CGFloat iconWidth = (self.layoutStyle == BUBBLE_LAYOUT_STYLE_TITLE_ONLY) ? 0 :
+                            bubbleContentSize.height * self.proportionOfIcon;
 	
 	CGFloat baseX = self.bubbleSize.width * self.proportionOfPadding.x;
 	CGFloat baseY = self.bubbleSize.height * self.proportionOfPadding.y;
@@ -96,7 +99,11 @@
 	//计算文本高度，可能是单行也可能是多行
 	//先假设是单行文本
 	CGSize calTitleRect = [self.title sizeWithAttributes: @{NSFontAttributeName : [UIFont systemFontOfSize: self.titleFontSize]}];
-	CGFloat titleWidth = (self.layoutStyle == BUBBLE_LAYOUT_STYLE_ICON_TOP_TITLE_BOTTOM || self.layoutStyle == BUBBLE_LAYOUT_STYLE_ICON_BOTTOM_TITLE_TOP || self.layoutStyle == BUBBLE_LAYOUT_STYLE_TITLE_ONLY) ? bubbleContentSize.width : bubbleContentSize.width * (1 - self.proportionOfSpace) - iconWidth;
+	CGFloat titleWidth = (self.layoutStyle == BUBBLE_LAYOUT_STYLE_ICON_TOP_TITLE_BOTTOM ||
+                          self.layoutStyle == BUBBLE_LAYOUT_STYLE_ICON_BOTTOM_TITLE_TOP ||
+                          self.layoutStyle == BUBBLE_LAYOUT_STYLE_TITLE_ONLY) ?
+                                bubbleContentSize.width :
+                                bubbleContentSize.width * (1 - self.proportionOfSpace) - iconWidth;
 	//不能超过显示区域宽度
 	if (titleWidth > calTitleRect.width) {
 		titleWidth = calTitleRect.width;
