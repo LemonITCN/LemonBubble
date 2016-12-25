@@ -16,21 +16,21 @@
 
 @interface LemonBubbleView()
 
-@property(nonatomic, strong) UIImageView *iconImageView;
-@property(nonatomic, strong) UILabel *titleLabel;
-@property(nonatomic, assign) BOOL *isShowing;// 是否正在显示中
-@property(nonatomic, strong) NSMutableDictionary<NSString*, LemonBubbleInfo*> *infoDic;
+@property (nonatomic, strong) UIImageView *iconImageView;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, assign) BOOL *isShowing;// 是否正在显示中
+@property (nonatomic, strong) NSMutableDictionary<NSString*, LemonBubbleInfo*> *infoDic;
 /// @brief 当前正在显示的泡泡信息对象
-@property(nonatomic, strong) LemonBubbleInfo *currentInfo;
+@property (nonatomic, strong) LemonBubbleInfo *currentInfo;
 /// @brief 当前自定义动画绘图的图层
-@property(nonatomic, strong) CAShapeLayer *currentDrawLayer;
+@property (nonatomic, strong) CAShapeLayer *currentDrawLayer;
 /// @brief 当前使用的图片帧动画计时器
-@property(nonatomic, strong) NSTimer *currentTimer;
+@property (nonatomic, strong) NSTimer *currentTimer;
 /// @brief 蒙版view
-@property(nonatomic, strong) UIView *maskView;
+@property (nonatomic, strong) UIView *maskView;
 
-@property(nonatomic, assign) CGFloat closeKey;// 关闭验证key，用来做关闭时候的延迟验证，当设置自动关闭之后，若在关闭之前出发了显示其他info的bubble，通过修改这个值保证不关闭其他样式的infoBubble
-@property(nonatomic, assign) NSInteger frameAnimationPlayIndex;// 帧动画播放的下标索引
+@property (nonatomic, assign) CGFloat closeKey;// 关闭验证key，用来做关闭时候的延迟验证，当设置自动关闭之后，若在关闭之前出发了显示其他info的bubble，通过修改这个值保证不关闭其他样式的infoBubble
+@property (nonatomic, assign) NSInteger frameAnimationPlayIndex;// 帧动画播放的下标索引
 
 @end
 
@@ -109,7 +109,7 @@
         self.layer.cornerRadius = info.cornerRadius;
         
         if (info.iconArray == nil || info.iconArray.count == 0) {
-            // 显示显示自定义动画
+            // 显示自定义动画
 			if (info.iconAnimation) {
 				_iconImageView.image = [[UIImage alloc] init];
 				self.currentDrawLayer = [CAShapeLayer layer];

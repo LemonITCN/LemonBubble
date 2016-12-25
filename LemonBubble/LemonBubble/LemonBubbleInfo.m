@@ -25,7 +25,7 @@
         self.iconAnimation = nil;
         self.onProgressChanged = nil;
         self.iconArray = nil;
-        self.title = @"LKBubble";
+        self.title = @"LemonBubble";
         self.frameAnimationTime = 0.1;
         self.proportionOfIcon = 0.675;
         self.proportionOfSpace = 0.1;
@@ -73,7 +73,7 @@
             y = 0;
             break;
         case BUBBLE_LOCATION_STYLE_CENTER:
-            y = ([UIScreen mainScreen].bounds.size.height - self.bubbleSize.height) / 2;
+            y = ([UIScreen mainScreen].bounds.size.height - self.bubbleSize.height) / 2.0;
             break;
         case BUBBLE_LOCATION_STYLE_BOTTOM:
             y = [UIScreen mainScreen].bounds.size.height - self.bubbleSize.height;
@@ -126,21 +126,21 @@
 			//图标+文本高度
 			CGFloat contentHeight = iconWidth + bubbleContentSize.height * self.proportionOfSpace + titleHeight;
 			//垂直居中，图标坐标
-			iconFrame.origin.x = baseX + (bubbleContentSize.width - iconWidth) / 2;
-			iconFrame.origin.y = baseY + (bubbleContentSize.height - contentHeight) / 2;
+			iconFrame.origin.x = baseX + (bubbleContentSize.width - iconWidth) / 2.0;
+			iconFrame.origin.y = baseY + (bubbleContentSize.height - contentHeight) / 2.0;
 			//由图标Y坐标求出文本Y坐标
 			titleFrame.origin.y = iconFrame.origin.y + iconWidth + bubbleContentSize.height * self.proportionOfSpace;
-			titleFrame.origin.x = baseX + (bubbleContentSize.width - titleWidth) / 2;
+			titleFrame.origin.x = baseX + (bubbleContentSize.width - titleWidth) / 2.0;
 		}
 			break;
 		case BUBBLE_LAYOUT_STYLE_ICON_BOTTOM_TITLE_TOP: {
 			//图标+文本高度
 			CGFloat contentHeight = iconWidth + bubbleContentSize.height * self.proportionOfSpace + titleHeight;
 			//垂直居中，文本Y坐标
-			titleFrame.origin.y = baseY + (bubbleContentSize.height - contentHeight) / 2;
-			titleFrame.origin.x = baseX + (bubbleContentSize.width - titleWidth) / 2;
+			titleFrame.origin.y = baseY + (bubbleContentSize.height - contentHeight) / 2.0;
+			titleFrame.origin.x = baseX + (bubbleContentSize.width - titleWidth) / 2.0;
 			//由文本坐标求出图标坐标
-			iconFrame.origin.x = baseX + (bubbleContentSize.width - iconWidth) / 2;
+			iconFrame.origin.x = baseX + (bubbleContentSize.width - iconWidth) / 2.0;
 			iconFrame.origin.y = titleFrame.origin.y + titleFrame.size.height + bubbleContentSize.height * self.proportionOfSpace;
 		}
 			break;
@@ -160,7 +160,7 @@
 			CGFloat contentWidth = iconWidth + bubbleContentSize.width * self.proportionOfSpace + titleWidth;
 			//水平居中，文本X坐标
 			titleFrame.origin.x = baseX + (bubbleContentSize.width - contentWidth) / 2;
-			titleFrame.origin.y = baseY + (bubbleContentSize.width - titleHeight) / 2;
+			titleFrame.origin.y = baseY + (bubbleContentSize.height - titleHeight) / 2;
 			//由文本坐标求出图标坐标
 			iconFrame.origin.x = titleFrame.origin.x + titleFrame.size.width + bubbleContentSize.width * self.proportionOfSpace;
 			iconFrame.origin.y = baseY + (bubbleContentSize.height - iconWidth) / 2;

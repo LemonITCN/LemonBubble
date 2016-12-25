@@ -74,7 +74,7 @@ typedef enum{
 @property (nonatomic, assign) BOOL isShowMaskView;
 /// @brief 蒙版颜色
 @property (nonatomic, strong) UIColor *maskColor;
-/// @brief 背景色
+/// @brief 泡泡控件的背景色
 @property (nonatomic, strong) UIColor *backgroundColor;
 /// @brief 图标渲染色
 @property (nonatomic, strong) UIColor *iconColor;
