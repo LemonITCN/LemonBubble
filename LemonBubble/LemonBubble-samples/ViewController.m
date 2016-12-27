@@ -112,7 +112,7 @@
     iconInfo.backgroundColor = [UIColor colorWithRed: 0.95 green:0.95 blue:0.95 alpha:1];
     iconInfo.titleColor = [UIColor darkGrayColor];
     iconInfo.locationStyle = BUBBLE_LOCATION_STYLE_TOP;
-    iconInfo.layoutStyle = BUBBLE_LAYOUT_STYLE_ICON_RIGHT_TITLE_LEFT;
+    iconInfo.layoutStyle = BUBBLE_LAYOUT_STYLE_ICON_LEFT_TITLE_RIGHT;
     iconInfo.title = @"飞行模式已开启";
     iconInfo.proportionOfDeviation = 0.05;
     iconInfo.bubbleSize = CGSizeMake(300, 60);
