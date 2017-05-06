@@ -111,6 +111,7 @@
         
         // 开始划线的动画
         CABasicAnimation *progressLongAnimation = [CABasicAnimation animationWithKeyPath: @"strokeEnd"];
+        progressLongAnimation.removedOnCompletion = NO;
         progressLongAnimation.fromValue = [NSNumber numberWithFloat: 0.0];
         progressLongAnimation.toValue = [NSNumber numberWithFloat: 1.0];
         progressLongAnimation.duration = 2;
@@ -118,6 +119,7 @@
         progressLongAnimation.repeatCount = 10000;
         // 线条逐渐变短收缩的动画
         CABasicAnimation *progressLongEndAnimation = [CABasicAnimation animationWithKeyPath: @"strokeStart"];
+        progressLongEndAnimation.removedOnCompletion = NO;
         progressLongEndAnimation.fromValue = [NSNumber numberWithFloat: 0.0];
         progressLongEndAnimation.toValue = [NSNumber numberWithFloat: 1.0];
         progressLongEndAnimation.duration = 2;
@@ -126,6 +128,7 @@
         progressLongEndAnimation.repeatCount = 10000;
         // 线条不断旋转的动画
         CABasicAnimation *progressRotateAnimation = [CABasicAnimation animationWithKeyPath: @"transform.rotation.z"];
+        progressRotateAnimation.removedOnCompletion = NO;
         progressRotateAnimation.fromValue = [NSNumber numberWithFloat: 0.0];
         progressRotateAnimation.toValue = [NSNumber numberWithFloat: M_PI / 180 * 360];
         progressRotateAnimation.repeatCount = 1000000;
