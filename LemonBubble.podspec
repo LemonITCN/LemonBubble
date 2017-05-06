@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "LemonBubble"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "A very NB HUD view ! instead of MBProgressHUD and SVProgressHUD"
   s.description      = <<-DESC
                        A very NB HUD view ! instead of MBProgressHUD and SVProgressHUD.
